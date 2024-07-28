@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+/* html {
+    scroll-behavior: smooth;
+} */
+body {
+    padding-top: 56px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background-color: #8c1af6;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.loja, .bolsas, .mapa {
+    background-color: #e3e6e9;
+}
+
+.loja, .sobre, .bolsas, .mapa {
+    padding: 50px 0;
+    font-size: 18px;
+    color: #524181;
+}
+
+.loja .content, .sobre .row, .bolsas .row, .mapa .row {
+    align-items: center;
+}
+
+.left-to-right {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+.right-to-left {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.bolsa-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bolsa-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fade{
+    color: #8c1af6;
+}
+.embed-responsive {
+    border: 2px solid #8c1af6;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #8c1af6;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fixed-button:hover {
+    background-color: #6e0eb8;
+    transform: scale(1.1);
+    color: white;
+}
+
+#messageModal .modal-content {
+    border-radius: 10px;
+}
+
+#messageModal .modal-header {
+    background-color: #8c1af6;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#messageModal .modal-header .close {
+    color: white;
+}
+
+#messageForm .form-group label {
+    font-weight: bold;
+}
+
+#messageForm .btn-primary {
+    background-color: #8c1af6;
+    border: none;
+}
+
+#messageForm .btn-primary:hover {
+    background-color: #6e0eb8;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+.enviar {
+    background-color: #6e0eb8;
+}
+
+#instagram-feed .card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+#instagram-feed .card:hover {
+    transform: scale(1.05);
+}
+
+#instagram-feed .card-img-top {
+    object-fit: cover;
+    height: 250px;
+}
+
+.instagram {
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    color: #524181;
+    cursor: pointer;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons .btn {
+    margin: 0 0px;
+    font-size: 20px;
+}
+
+.social-icons .btn-success i, 
+.social-icons .btn-primary i {
+    font-size: 20px;
+}
+
+.social-icons .btn-success {
+    color: white;
+}
+
+.social-icons .btn-primary {
+    color: white;
+    background-color: #C13584;
+    border-color: #C13584;
+}
+footer {
+    background-color: #8c1af6;
+    color: white;
+}
